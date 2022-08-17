@@ -10,4 +10,5 @@ fan made website based on Traditional Chinese
 - 點擊禮物-禮物敘述  
 - 名士過濾-顯示選取名士禮物(不分級)  
 - 名士過濾網址(gitpage可用)  
-- 禮物獲得方法
+- 禮物獲得方法  
+對應遊戲版本: 11.1.1.41
