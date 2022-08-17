@@ -1,0 +1,96 @@
+doctype html
+head
+  title 花亦山心之月 名士心悅之物
+  meta(name="description", content="花亦山心之月-名士心悅之物 名士禮物(角色禮物)圖文版 提升名士好感度 花亦山心之月禮物獲取方法")
+  meta(name="keywords", content="花亦山心之月,名士心悅之物,名士禮物,角色禮物,禮物一覽,禮物說明")
+  link(rel="icon",type="image/png",href="https://p16-sg.dailygn.com/obj/g-marketing-assets-sg/2022_04_06_09_46_49/icon_s1879634.png")
+  link(rel="stylesheet", href="gifts.css")
+  script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+body
+  .container
+    h3.guild 花亦山心之月
+    h1.topic 名士心悅之物
+    h2.title 
+    button.filterURLCopy 選取名士的網址
+        .tip 複製到剪貼簿
+    .itemPanel.orange
+      button.lBtn <
+      ul.giftChrList
+      button.rBtn >
+    .itemPanel.violet
+      button.lBtn <
+      ul.giftChrList
+      button.rBtn >
+    .itemPanel.blue
+      button.lBtn <
+      ul.giftChrList
+      button.rBtn >
+    .itemPanel.green
+      button.lBtn <
+      ul.giftChrList
+      button.rBtn >
+      
+    .tips 
+      h3.giftTips 禮物獲得方法 
+      .giftTipsContent
+        h4 重複
+        p 每日任務/每週任務
+        p 茶點(每日)-食契
+        p 課程(每日)-籌算(明前龍井),儀容&儀禮(南塘詩選)
+        p 雅集(每週)-結納名流
+        h4 購買
+        p 茶點-購置: 1000賞錢1個名士禮物錦囊 10/w
+        p 商店-金葉子: 20金葉子1個描金銅燈 10/d
+        p 商店-兌換-無心苑: 40銀杏錦1個花家環佩 永久限20
+        p 學期買買領很多XD
+        h4 機率
+        p 景域尋寶(自己/隊友)
+        p 茶點-天降肥貓(自己/朋友)
+        p 名士買茶點(信件收取)
+        p 被名士回送禮物❤
+        h4 其他
+        p 尋訪名士(可以選取名士點”查看獎勵”)
+        p 名士-好感-評論: 點讚+玩家評論 5/d
+        p 各種序號大家記得用起來~
+        
+    .note
+      p 名士喜歡的禮物 好感度1.5倍
+      hr
+      br
+      //p 缺圖/未加入:
+      //p 雄黃酒(陌雲) 戲貓鈴鐺(夏婉蓮) 五色葡萄乾(蘇望夷)?
+      //br
+      p 出現新角會陸續新增~
+      hr
+      br
+      p 感謝所有同硯
+      p 有錯誤煩請指正 有意見也歡迎提供唷～
+      br
+      span discord:
+      button.dc lis#5203
+        .tip 複製到剪貼簿
+      br
+      //hr
+      //br
+      //a(href="https://codepen.io/lisyuan/full/rNdzaOY" target="_blank"  title="新分頁開啟").chrMap 名士關係圖 
+      //span (強烈建議用電腦開啟)(名士描述新增中)
+      
+  .popup  
+    .pTitle 
+    .pStory 
+  button.showChr 顯示名士頭像
+  button.chrListBtn 選取名士
+    .toggleChrListBtn
+    .chrPanel 
+      .chrListRarity(rarity="ur",expand="true") UR -
+      .chrList.ur 
+      .chrListRarity(rarity="ssr",expand="false") SSR +
+      .chrList.ssr
+      .chrListRarity(rarity="sr",expand="false") SR +
+      .chrList.sr
+      .chrListRarity(rarity="r",expand="false") R +
+      .chrList.r
+      .chrListResetBtn 清空
+  button.filterChr 過濾
+  
+  script(type='text/javascript', src='gifts.js')
