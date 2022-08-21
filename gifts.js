@@ -637,7 +637,8 @@ function toggleChrList(force) {
     }
     var chrPanel = $(".toggleChrListBtn").siblings(".chrPanel");
     var listBtn = $(".toggleChrListBtn").parent();
-    listBtn.css("background-color", showChrList ? "#fcc" : "white");
+    listBtn.css("background-color", showChrList ? "#e76f51" : "#e0e0e0");
+    listBtn.css("color", showChrList ? "#ededed" : "black");
     chrPanel.css("display", showChrList ? "block" : "none");
 }
 
@@ -666,7 +667,8 @@ $(".chrListRarity").click(
 function enableFilter() {
     toggleChrList(false);
     filterOn = true;
-    $(".filterChr").css("background-color", "#fcc");
+    $(".filterChr").css("background-color", "#e76f51");
+    $(".filterChr").css("color", "#ededed");
     $(".chrListBtn").css("display", "none");
     //display all itemPanel
     Object.values(rarity).forEach((r) => {
@@ -704,7 +706,8 @@ function enableFilter() {
 
 function disableFilter() {
     filterOn = false;
-    $(".filterChr").css("background-color", "white");
+    $(".filterChr").css("background-color", "#e0e0e0");
+    $(".filterChr").css("color", "black");
     $(".chrListBtn").css("display", "block");
     $(".filterURLCopy").css("display", "none");
     //display default itemPanel and hide others

@@ -120,6 +120,10 @@ html,body
     font-size: 24px
     letter-spacing: 1px
 
+button
+  &:focus
+    outline: none
+
 .showChr 
   position: fixed
   height: 40px
@@ -135,6 +139,7 @@ html,body
   top: 60px
   padding: 10px
   border: none
+  background-color: #e0e0e0
 
 .chrListBtn
   position: fixed
@@ -144,6 +149,7 @@ html,body
   top: 60px
   padding: 10px
   border: none
+  background-color: #e0e0e0
   .toggleChrListBtn
     position: fixed
     height: 20px
@@ -216,8 +222,9 @@ html,body
   a
     color: #000
   .dc
+    margin-left: 5px
     border: none
-    border-radius: 5px
+    border-radius: 2px
     color: #666
     padding: 8px
     background-color: #ddd
