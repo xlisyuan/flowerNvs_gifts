@@ -206,7 +206,7 @@ var spritePosChr = {
     '吾冥': "-300px -00px",
     '伽華': "-400px -00px",
     '銀朱': "-00px -100px",
-    '戈蘭天': "-100px -100px",
+    '弋蘭天': "-100px -100px",
     '薔': "-200px -100px",
 }
 var spritePosGift = {
@@ -361,8 +361,8 @@ var giftList = {
     '了了禮物2': { gift: "雙尾金魚", name: "了了", rarity: ".orange", giftSprite: "gift", chrSprite: "chr" },
     '兔毛暖手筒': { gift: "兔毛暖手筒", name: "昭陽公主", rarity: ".orange", giftSprite: "gift2", chrSprite: "chr1" },
     '玫瑰花種': { gift: "玫瑰花種", name: "昭陽公主", rarity: ".orange", giftSprite: "gift2", chrSprite: "chr1" },
-    '食鐵獸玩偶': { gift: "食鐵獸玩偶", name: "戈蘭天", rarity: ".orange", giftSprite: "gift3", chrSprite: "chr3" },
-    '錦繡眼罩': { gift: "錦繡眼罩", name: "戈蘭天", rarity: ".orange", giftSprite: "gift3", chrSprite: "chr3" },
+    '食鐵獸玩偶': { gift: "食鐵獸玩偶", name: "弋蘭天", rarity: ".orange", giftSprite: "gift3", chrSprite: "chr3" },
+    '錦繡眼罩': { gift: "錦繡眼罩", name: "弋蘭天", rarity: ".orange", giftSprite: "gift3", chrSprite: "chr3" },
     //SSR
     '束髮髮帶': { gift: "束髮髮帶", name: "虞沐陽", rarity: ".orange", giftSprite: "gift", chrSprite: "chr1" },
     '青萍花': { gift: "青萍花", name: "虞沐陽", rarity: ".violet", giftSprite: "gift1", chrSprite: "chr1" },
