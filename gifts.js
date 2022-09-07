@@ -474,9 +474,9 @@ var filterOn = false;
 var showChrList = false;
 var pageUrl = window.location.origin + window.location.pathname;
 var chrFilterURL = "";
-var chrURNameList = ["驚墨", "玉澤", "季元啟", "安如是", "宣望鈞", "凌晏如", "文司宥", "月憐", "陵", "未央", "雲無羈", "步夜", "謝行逸", "星河", "了了", "昭陽公主"];
-var chrSSRNameList = ["虞沐陽", "沐英嵐", "洛凌塵", "月靈", "宣連隱", "逍遙先生", "樂仙兒", "左丘肅", "阿古達木", "沈南柯", "耶律炎", "封子羽", "言千曉", "何必", "程筠", "鹿蜀", "瑩兒", "司業"];
-var chrSRNameList = ["易七", "陌雲", "夏婉蓮", "蘇望丘", "司空澈", "林珊", "梵", "紅闕", "秋符蝶", "文司晏", "何號", "楚禺", "辰香", "阿武", "蘇望夷", "木微霜", "桃山客", "賀之洲"];
+var chrURNameList = ["驚墨", "玉澤", "季元啟", "安如是", "宣望鈞", "凌晏如", "文司宥", "月憐", "陵", "未央", "雲無羈", "步夜", "謝行逸", "星河", "了了", "昭陽公主", "弋蘭天"];
+var chrSSRNameList = ["虞沐陽", "沐英嵐", "洛凌塵", "月靈", "宣連隱", "逍遙先生", "樂仙兒", "左丘肅", "阿古達木", "沈南柯", "耶律炎", "封子羽", "言千曉", "何必", "程筠", "鹿蜀", "瑩兒", "司業", "薔"];
+var chrSRNameList = ["易七", "陌雲", "夏婉蓮", "蘇望丘", "司空澈", "林珊", "梵", "紅闕", "秋符蝶", "文司晏", "何號", "楚禺", "辰香", "阿武", "蘇望夷", "木微霜", "桃山客", "賀之洲", "胡小梁"];
 var chrRNameList = ["喬憶橋", "冷瑤", "元化", "趙孤鳴", "阿刃", "伍校尉", "尹冰", "曹小月", "白蕊兒", "青隱", "季元鴻", "俞不平", "唐堂", "杜懷音"];
 // pre
 const preGiftChr = "<li class='giftChr' gift={{GIFT}} name={{NAME}} giftSprite={{gSPRITE}} chrSprite={{cSPRITE}} ><div class='gift'></div><div class='giftName'> </div><div class='chr'></div><div class='chrName'> </div></li>"
