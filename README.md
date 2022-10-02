@@ -12,3 +12,7 @@ fan made website based on Traditional Chinese
 - 名士過濾網址(gitpage可用)  
 - 禮物獲得方法  
 對應遊戲版本: 11.1.1.41
+##### v2
+- 更新活動新角色
+- 新增google tag
+對應遊戲版本: 11.1.1.55

@@ -53,6 +53,9 @@ var giftStory = {
     "食鐵獸玩偶": "這玩偶做成了蜀中特有的食鐵獸模樣，大概只有不懼其威力的人才會心生喜愛吧。可以增加160點好感度。",
     "錦繡眼罩": "用越陽特有的無盡靡面料織造而成的單邊眼罩，雖然刺繡繁複但質地十分柔軟親膚，可見織匠技藝之精湛。可以增加160點好感度。",
     "荊棘長鞭": "荊棘紮成的長鞭，看起來輕巧，可甩在人身上可不是鬧著玩的。可以增加160點好感度。",
+    "藏袖銀針": "精銀打造的細針，可醫用，可刺繡，亦可作為暗襲者的特殊武器。可以增加160點好感度。",
+    "紅珊瑚珠": "質地上乘的珊瑚珠，散發著瑩潤柔和的光芒。可以增加160點好感度。",
+    "天然琥珀": "凝萬物魂靈，化石成珀，掩埋地下千萬年，可趨吉避凶。可以增加160點好感度。",
     //violet
     "青萍花": "又稱浮萍花，有水處便能活，極儘自由美麗，為虞氏小姐所喜。可以增加80點好感度。",
     "戰馬韁轡": "孔穎達疏：轡，御馬索也。以堅韌皮具製成嚼子，結實麻繩紮成韁繩，是以驅服烈性戰馬，馳騁沙場。可以增加80點好感度。",
@@ -73,6 +76,7 @@ var giftStory = {
     "捕夢網": "由色澤明豔的羽毛編製而成，常被寄託思念、祈願之情。可以增加80點好感度。",
     "經學課業簿": "厚厚一本的經學課業簿，彷彿永遠寫不完似的。可以增加80點好感度。",
     "毛絨吊墜": "軟綿綿輕飄飄，摸它就像是在撫摸一隻可愛的小動物。可以增加80點好感度。",
+    "腳鈴": "腳踏鈴響，羈束難逃。可以增加80點好感度。",
     //blue
     "精鐵司南": "沉迷遠路，詎見司南之機。對於不識阡陌的人來說，大有益處。可以增加40點好感度。",
     "紫鋒狼毫": "去冬收集黃鼠狼的尾毛，今春製成上好的毛筆放在櫥中細心收藏，等待與之相配的主人。可以增加40點好感度。",
@@ -93,6 +97,7 @@ var giftStory = {
     "鑲花飾物": "綠冰糯種蛋面鑲嵌花型墜飾，精美華貴又不失格調，受到諸多愛美之人的追捧。可以增加40點好感度。",
     "奇異羽毛": "奇珍飛禽身上脫落的羽毛，顏色奇異，經久不退，但除了作為顏料的原材料，沒有什麼實際作用。可以增加40點好感度。",
     "竹編螳螂": "竹葉編織的螳螂，玲瓏精巧，最受男孩子喜愛。可以增加40點好感度。",
+    "撥浪鼓": "只手輕撥，鼓聲點點，在一頓一頓的聲響之中，是塵封已久的歷史。可以增加40點好感度。",
     //green
     "鯉魚布偶": "棉布織成的魚型玩偶，手感十分舒適。可以增加20點好感度。",
     "天景邸抄": "承永發行量最高的邸報，各種新鮮見聞上面都有記載。可以增加20點好感度。",
@@ -122,11 +127,11 @@ var spriteUrls = {
     "chr": "https://i.imgur.com/bUvn3TT.png",
     "chr1": "https://i.imgur.com/XD8WrTZ.png",
     "chr2": "https://i.imgur.com/XN5w38i.png",
-    "chr3": "https://i.imgur.com/dnYlmlj.png",
+    "chr3": "https://i.imgur.com/Qh07CrR.png",
     "gift": "https://i.imgur.com/g5OwIPO.png",
     "gift1": "https://i.imgur.com/Ui8oHKj.png",
     "gift2": "https://i.imgur.com/CxKHIWi.png",
-    "gift3": "https://i.imgur.com/QNO1kbO.png",
+    "gift3": "https://i.imgur.com/mBbu0BR.png",
 };
 var spritePosChr = {
     //'所有名士': "-00px -00px",
@@ -207,6 +212,9 @@ var spritePosChr = {
     '銀朱': "-00px -100px",
     '弋蘭天': "-100px -100px",
     '薔': "-200px -100px",
+    '十四夜': "-300px -100px",
+    '滇離': "-400px -100px",
+    '守伊': "-00px -200px",
 }
 var spritePosGift = {
     //'禮物': "-0px -0px",
@@ -325,6 +333,11 @@ var spritePosGift = {
     '荊棘長鞭': "-500px -100px",
     '毛絨吊墜': "-600px -100px",
     '竹編螳螂': "-700px -100px",
+    '藏袖銀針': "-00px -200px",
+    '紅珊瑚珠': "-100px -200px",
+    '天然琥珀': "-200px -200px",
+    '腳鈴': "-300px -200px",
+    '撥浪鼓': "-400px -200px",
 }
 var giftList = {
     '紫檀木鳥籠': { gift: "紫檀木鳥籠", name: "驚墨", rarity: ".orange", giftSprite: "gift3", chrSprite: "chr" },
@@ -361,6 +374,9 @@ var giftList = {
     '玫瑰花種': { gift: "玫瑰花種", name: "昭陽公主", rarity: ".orange", giftSprite: "gift2", chrSprite: "chr1" },
     '食鐵獸玩偶': { gift: "食鐵獸玩偶", name: "弋蘭天", rarity: ".orange", giftSprite: "gift3", chrSprite: "chr3" },
     '錦繡眼罩': { gift: "錦繡眼罩", name: "弋蘭天", rarity: ".orange", giftSprite: "gift3", chrSprite: "chr3" },
+    '藏袖銀針': { gift: "藏袖銀針", name: "十四夜", rarity: ".orange", giftSprite: "gift3", chrSprite: "chr3" },
+    '紅珊瑚珠': { gift: "紅珊瑚珠", name: "十四夜", rarity: ".orange", giftSprite: "gift3", chrSprite: "chr3" },
+    '天然琥珀': { gift: "天然琥珀", name: "滇離", rarity: ".orange", giftSprite: "gift3", chrSprite: "chr3" },
     //SSR
     '束髮髮帶': { gift: "束髮髮帶", name: "虞沐陽", rarity: ".orange", giftSprite: "gift", chrSprite: "chr1" },
     '青萍花': { gift: "青萍花", name: "虞沐陽", rarity: ".violet", giftSprite: "gift1", chrSprite: "chr1" },
@@ -400,6 +416,7 @@ var giftList = {
     '經學課業簿': { gift: "經學課業簿", name: "司業", rarity: ".violet", giftSprite: "gift1", chrSprite: "chr1" },
     '荊棘長鞭': { gift: "荊棘長鞭", name: "薔", rarity: ".orange", giftSprite: "gift3", chrSprite: "chr3" },
     '毛絨吊墜': { gift: "毛絨吊墜", name: "薔", rarity: ".violet", giftSprite: "gift3", chrSprite: "chr3" },
+    '腳鈴': { gift: "腳鈴", name: "滇離", rarity: ".violet", giftSprite: "gift3", chrSprite: "chr3" },
     //
     //橙
     '花家環佩': { gift: "花家環佩", name: "所有名士", rarity: ".orange", giftSprite: "gift2", chrSprite: "chr" },
@@ -428,6 +445,7 @@ var giftList = {
     '鑲花飾物': { gift: "鑲花飾物", name: "桃山客", rarity: ".blue", giftSprite: "gift1", chrSprite: "chr2" },
     '奇異羽毛': { gift: "奇異羽毛", name: "賀之洲", rarity: ".blue", giftSprite: "gift2", chrSprite: "chr2" },
     '竹編螳螂': { gift: "竹編螳螂", name: "胡小梁", rarity: ".blue", giftSprite: "gift3", chrSprite: "chr3" },
+    '撥浪鼓': { gift: "撥浪鼓", name: "守伊", rarity: ".blue", giftSprite: "gift3", chrSprite: "chr3" },
     //
     '明前龍井': { gift: "明前龍井", name: "所有名士", rarity: ".blue", giftSprite: "gift2", chrSprite: "chr2" },
     //綠
@@ -472,9 +490,9 @@ var filterOn = false;
 var showChrList = false;
 var pageUrl = window.location.origin + window.location.pathname;
 var chrFilterURL = "";
-var chrURNameList = ["驚墨", "玉澤", "季元啟", "安如是", "宣望鈞", "凌晏如", "文司宥", "月憐", "陵", "未央", "雲無羈", "步夜", "謝行逸", "星河", "了了", "昭陽公主", "弋蘭天"];
-var chrSSRNameList = ["虞沐陽", "沐英嵐", "洛凌塵", "月靈", "宣連隱", "逍遙先生", "樂仙兒", "左丘肅", "阿古達木", "沈南柯", "耶律炎", "封子羽", "言千曉", "何必", "程筠", "鹿蜀", "瑩兒", "司業", "薔"];
-var chrSRNameList = ["易七", "陌雲", "夏婉蓮", "蘇望丘", "司空澈", "林珊", "梵", "紅闕", "秋符蝶", "文司晏", "何號", "楚禺", "辰香", "阿武", "蘇望夷", "木微霜", "桃山客", "賀之洲", "胡小梁"];
+var chrURNameList = ["驚墨", "玉澤", "季元啟", "安如是", "宣望鈞", "凌晏如", "文司宥", "月憐", "陵", "未央", "雲無羈", "步夜", "謝行逸", "星河", "了了", "昭陽公主", "弋蘭天", "十四夜"];
+var chrSSRNameList = ["虞沐陽", "沐英嵐", "洛凌塵", "月靈", "宣連隱", "逍遙先生", "樂仙兒", "左丘肅", "阿古達木", "沈南柯", "耶律炎", "封子羽", "言千曉", "何必", "程筠", "鹿蜀", "瑩兒", "司業", "薔", "滇離"];
+var chrSRNameList = ["易七", "陌雲", "夏婉蓮", "蘇望丘", "司空澈", "林珊", "梵", "紅闕", "秋符蝶", "文司晏", "何號", "楚禺", "辰香", "阿武", "蘇望夷", "木微霜", "桃山客", "賀之洲", "胡小梁", "守伊"];
 var chrRNameList = ["喬憶橋", "冷瑤", "元化", "趙孤鳴", "阿刃", "伍校尉", "尹冰", "曹小月", "白蕊兒", "青隱", "季元鴻", "俞不平", "唐堂", "杜懷音"];
 // pre
 const preGiftChr = "<li class='giftChr' gift={{GIFT}} name={{NAME}} giftSprite={{gSPRITE}} chrSprite={{cSPRITE}} ><div class='gift'></div><div class='giftName'> </div><div class='chr'></div><div class='chrName'> </div></li>"
