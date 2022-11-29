@@ -26,6 +26,10 @@ html, body {
   align-items: center;
 }
 
+.notice {
+  color: #666;
+}
+
 .topic {
   text-align: center;
   margin: 10px;
